@@ -10,13 +10,18 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var count: Int = 0
+    @State private var isOn: Bool = false
     
     var body: some View {
         VStack {
+            
+            Toggle(isOn: $isOn, label: {
+                Text("Light")
+            })
             Text("\(count)")
                 .font(.largeTitle)
             
-            Button("Increment") {
+            Button(isOn ? "ON": "OFF") {
                 count += 1
             }
         }
