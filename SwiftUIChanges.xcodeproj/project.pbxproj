@@ -14,6 +14,7 @@
 		2A071C502AD5241300E1625C /* SwiftUIChangesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A071C4F2AD5241300E1625C /* SwiftUIChangesTests.swift */; };
 		2A071C5A2AD5241300E1625C /* SwiftUIChangesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A071C592AD5241300E1625C /* SwiftUIChangesUITests.swift */; };
 		2A071C5C2AD5241300E1625C /* SwiftUIChangesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A071C5B2AD5241300E1625C /* SwiftUIChangesUITestsLaunchTests.swift */; };
+		2A071C692AD5266000E1625C /* BindableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A071C682AD5266000E1625C /* BindableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2A071C552AD5241300E1625C /* SwiftUIChangesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChangesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A071C592AD5241300E1625C /* SwiftUIChangesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChangesUITests.swift; sourceTree = "<group>"; };
 		2A071C5B2AD5241300E1625C /* SwiftUIChangesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChangesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A071C682AD5266000E1625C /* BindableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2A071C3E2AD5241100E1625C /* SwiftUIChangesApp.swift */,
 				2A071C402AD5241100E1625C /* ContentView.swift */,
+				2A071C682AD5266000E1625C /* BindableView.swift */,
 				2A071C422AD5241300E1625C /* Assets.xcassets */,
 				2A071C442AD5241300E1625C /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				2A071C412AD5241100E1625C /* ContentView.swift in Sources */,
 				2A071C3F2AD5241100E1625C /* SwiftUIChangesApp.swift in Sources */,
+				2A071C692AD5266000E1625C /* BindableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

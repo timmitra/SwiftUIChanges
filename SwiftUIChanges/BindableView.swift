@@ -6,10 +6,39 @@
 //
 
 import SwiftUI
+import SwiftData // includes Observable
 
-struct BindableView: View {
+@Observable
+class Light {
+    var isOn: Bool = false
+}
+
+// child view
+struct Room: View {
+    
+    @Bindable var light: Light
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Toggle(isOn: $light.isOn) {
+            EmptyView()
+        }.fixedSize()
+    }
+}
+
+// parent view
+struct BindableView: View {
+    
+    @State private var light: Light = Light()
+    
+    var body: some View {
+        VStack {
+            // Room needs to send data to ContentView
+            Room(light: light)
+        }
+        // fill the screen
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(light.isOn ? .yellow: .black)
+            
     }
 }
 
